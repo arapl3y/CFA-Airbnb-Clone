@@ -1,0 +1,68 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @room.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @room.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @room.price %>
+</p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @room.capacity %>
+</p>
+
+<p>
+  <strong>Bathrooms:</strong>
+  <%= @room.bathrooms %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @room.user %>
+</p>
+
+<p>
+  <strong>Pets:</strong>
+  <%= @room.pets %>
+</p>
+
+<p>
+  <strong>Smoking:</strong>
+  <%= @room.smoking %>
+</p>
+
+<p>
+  <strong>Wifi:</strong>
+  <%= @room.wifi %>
+</p>
+
+<p>
+  <strong>Bath:</strong>
+  <%= @room.bath %>
+</p>
+
+<p>
+  <strong>Share:</strong>
+  <%= @room.share %>
+</p>
+
+<p>
+  <strong>Parties:</strong>
+  <%= @room.parties %>
+</p>
+
+<% @room.images.each do |image| %>
+  <img src="<%= image.url %>">
+<% end %>
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>
